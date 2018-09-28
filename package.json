@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "cross-env webpack --progress --hide-modules",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "test": ""
+    "test": "node ./node_modules/nyc/bin/nyc.js node ./japaFile.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -22,11 +22,23 @@
     "babel-loader": "^8.0.4",
     "babel-polyfill": "^6.26.0",
     "cross-env": "^5.2.0",
+    "dotenv": "^6.0.0",
     "file-loader": "^2.0.0",
+    "nyc": "^13.0.1",
     "regenerator-runtime": "^0.12.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9"
+  },
+  "nyc": {
+    "include": [
+      "src",
+      "lib"
+    ],
+    "exclude": [
+      "test",
+      "japaFile.js"
+    ]
   }
 }

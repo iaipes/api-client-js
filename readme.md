@@ -22,18 +22,38 @@ $ npm install @iaipes/apiclient
 
 ### Configuration
 
-Configure the next variables in you `.env` file:
+Configure the object
 
-```bash
-IAIPES_API_TOKEN={token}
-IAIPES_API_URL=http://developers.iaip.iw.sv
-IAIPES_API_TIMEOUT=10
+```js
+const Config = require('@iaipes/apiclient').Config
+Config.baseURL = "http://developers.iaip.iw.sv"
+Config.headers['Authorization'] = 'Bearer ' + '{token}'
 ```
 
 **Note:** replace `{token}` with your developer access token.
 
 ## Usage
 
+```js
+const ApiV1InformationRequestClient = require('@iaipes/apiclient').ApiV1InformationRequestClient
+const request = async function(){
+   try {
+    let response = await informationRequest.index({
+      include: 'institution',
+      filter: {
+        profession_cont: 'Desarrollador'
+      },
+      sort: 'created_at desc'
+    })
+    console.log(response)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+request()
+
+```
 
 **Note:** For more information about classes and methods, please check the [documentation](http://developers.iaip.iw.sv/docs)
 
@@ -43,7 +63,20 @@ Please see the [changelog](changelog.md) for more information on what has change
 
 ## Testing
 
+Create a `.dot`  file inside the `test` folder
 
+``` bash
+IAIPES_API_TOKEN={token}
+IAIPES_API_URL=http://developers.iaip.iw.sv
+IAIPES_API_TIMEOUT=30
+```
+**Note:** Replace `{token}` with your developer access token
+
+Run the rest with the next command
+
+``` bash
+$ yarn test
+```
 
 ## Contributing
 
