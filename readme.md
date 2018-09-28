@@ -1,5 +1,7 @@
 # ApiClient
 
+[![Latest Version on npm][ico-version]][link-version]
+[![Total Downloads][ico-downloads]][link-downloads]
 
 Client for the  REST API at [developers portal](http://developers.iaip.iw.sv/docs) of IAIP.
 
@@ -94,10 +96,12 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/iaipes/apiclient.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/iaipes/apiclient.svg?style=flat-square
+[ico-version]: https://img.shields.io/npm/v/@iaipes/apiclient.svg
+[ico-downloads]: https://img.shields.io/npm/dt/@iaipes/apiclient.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/iaipes/apiclient/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
 [link-author]: https://github.com/iaipes
 [link-contributors]: ./contributors.md
+[link-version]: https://www.npmjs.com/package/@iaipes/apiclient
+[link-downloads]: https://www.npmjs.com/package/@iaipes/apiclient
