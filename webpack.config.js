@@ -20,6 +20,7 @@ module.exports = {
   },
   "mode": "production",
   externals: {
+    'axios': 'axios'
   },
   entry: ["babel-polyfill", './src/api-client.js'],
   output: {

@@ -6,7 +6,9 @@
   "repository": "https://github.com/iaipes/api-client-js",
   "author": "IAIP <info@iaip.gob.sv>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
   "scripts": {
     "dev": "cross-env webpack --progress --hide-modules",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
