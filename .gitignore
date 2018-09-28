@@ -3,7 +3,7 @@ node_modules/
 dist/api-client.js
 npm-debug.log
 yarn-error.log
-
+test.js
 # Editor directories and files
 .idea
 *.suo
@@ -11,3 +11,4 @@ yarn-error.log
 *.njsproj
 *.sln
 .vs
+.env

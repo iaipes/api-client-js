@@ -28,7 +28,8 @@ module.exports = {
     libraryTarget: "umd",
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: process.env.NODE_ENV === 'production' ? 'api-client.min.js' : 'api-client.js'
+    filename: process.env.NODE_ENV === 'production' ? 'api-client.min.js' : 'api-client.js',
+    globalObject: "(typeof window !== 'undefined' ? window : this)",
   },
   module: {
     rules: [
@@ -37,14 +38,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: { // << add options with presets env
-          presets: ['env']
-        }
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
+          presets: ['@babel/preset-env']
         }
       }
     ]
@@ -53,7 +47,7 @@ module.exports = {
     alias: {
       
     },
-    extensions: ['*', '.js', '.json']
+    extensions: ['.js']
   },
   devServer: {
     historyApiFallback: true,
