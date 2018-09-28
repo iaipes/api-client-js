@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+demo/
 dist/api-client.js
 npm-debug.log
 yarn-error.log

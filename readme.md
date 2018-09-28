@@ -8,6 +8,8 @@ Client for the  REST API at [developers portal](http://developers.iaip.iw.sv/doc
 
 ## Dependencies
 
+* [axios](https://github.com/axios/axios)
+* [qs](https://github.com/ljharb/qs)
 
 ## Installation
 
