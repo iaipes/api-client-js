@@ -1,0 +1,29 @@
+{
+  "name": "@iaipes/apiclient",
+  "version": "0.1.0",
+  "description": "REST client for the IAIP API",
+  "main": "dist/api-client.js",
+  "repository": "https://github.com/iaipes/api-client-js",
+  "author": "IAIP <info@iaip.gob.sv>",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "dev": "cross-env webpack --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "test": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "file-loader": "^2.0.0",
+    "regenerator-runtime": "^0.12.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
