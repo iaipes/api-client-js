@@ -103,4 +103,5 @@ license. Please see the [license file](license.md) for more information.
 
 [link-author]: https://github.com/iaipes
 [link-contributors]: ./contributors.md
-[link-version]: https://www.npmjs.com/package/@iaipes/apiclient[link-downloads]: https://www.npmjs.com/package/@iaipes/apiclient
+[link-version]: https://www.npmjs.com/package/@iaipes/apiclient
+[link-downloads]: https://www.npmjs.com/package/@iaipes/apiclient
