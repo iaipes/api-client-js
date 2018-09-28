@@ -68,7 +68,6 @@ Create a `.dot`  file inside the `test` folder
 ``` bash
 IAIPES_API_TOKEN={token}
 IAIPES_API_URL=http://developers.iaip.iw.sv
-IAIPES_API_TIMEOUT=30
 ```
 **Note:** Replace `{token}` with your developer access token
 
