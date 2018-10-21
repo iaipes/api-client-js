@@ -8,13 +8,7 @@ test.group('City', (group) => {
     assert.plan(4)
     const client = new Client()
     try {
-      let response = await client.index({
-        include: 'institution',
-        filter: {
-          profession_cont: 'Desarrollador'
-        },
-        sort: 'created_at desc'
-      })
+      let response = await client.index()
       assetSuccessfulResponse(response, assert)
     } catch (error) {
       console.log(error)
